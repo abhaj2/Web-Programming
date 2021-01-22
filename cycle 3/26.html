@@ -1,0 +1,20 @@
+<html>
+<style>
+div{
+  border:1px solid black;
+width:50%;
+height:50px;
+background-color:lightblue;
+}
+</style>
+<body>
+<div><h1>WANoE PPPoE For RoI - TechWiki </h1></div>
+ WANoE solution is implemented for IPoE line types. It works by running the DHCP client
+on the bridge interface. DHCP discover is broadcast on all the LAN interfaces. If there is a DHCP offer
+on one of the Ethernet interfaces, then that interface will be moved out of the bridge and configured
+as a WAN port. Moving it out of the bridge is necessary as we do not want LAN traffic to be bridged
+across to the WAN side. Also, since the DHCP client is started on the bridge, if DHCP is allowed to
+complete negotiation, then the bridge will acquire WAN IP address and this is not desirable. The
+VLAN tagging for the IPoE line is done by the open reach modem.
+</body>
+</html>
