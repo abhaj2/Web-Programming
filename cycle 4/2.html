@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function reverse()
+{
+  var digit, result=0;
+   var n=Number(document.getElementById("number").value);
+if(n!=0)
+  {
+      digit=n%10
+      result=(result*10)+digit;
+      n=n/10|0
+      document.getElementById("a").innerHTML=result;
+
+
+}
+
+}
+</script>
+</head>
+<body>
+    Enter the number: <input type="text" id="number">
+
+    <p id ="a"></p>
+    <button onclick="reverse()"> REV </button>
+
+  </body>
+  </html>

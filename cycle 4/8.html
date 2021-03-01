@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function mul_div()
+{
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=a*b;
+document.getElementById("result1").value=c;
+c=a/b;
+document.getElementById("result2").value=c;
+}
+</script>
+</head>
+  </body>
+  Enter the first number:<br><input id="first"><br><br>
+  Enter the second number:<br><input id="second"><br><br>
+  <button onclick="mul_div()"> mul </button><br><br>
+  The product of two numbers  <br>
+  <input id ="result1"><br><br>
+    The division of two numbers  <br>
+  <input id="result2">
+  </body>
+  </html>

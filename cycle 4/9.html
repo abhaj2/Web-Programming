@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+function py()
+{
+var char=document.getElementById("char").value;
+if(char.substring(0,2)=='Py'|| char.substring(0,2)=='py')
+{
+document.getElementById("result").value=char;
+}
+else{
+document.getElementById("result").value="Py" +char;
+}
+}
+</script>
+</head>
+  </body>
+  Enter the character:<br><input id="char"><br><br>
+
+  <button onclick="py()"> Try it </button><br><BR>
+  The output is:<br><br>
+  <input type="text" id="result">
+
+  </body>
+  </html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+    function mul()
+    {
+      var num;
+      num=Number(document.getElementById("number").value);
+      if (num%3==0)
+      {
+        window.alert(num + " is a multiple of 3 ");
+      }
+      else if(num%7==0)
+      {
+        window.alert(num + " is a multiple of 7");
+      }
+      else
+      {
+        window.alert(num + " is either a multiple of3 or 7 ");
+      }
+    }
+      </script>
+      </head>
+      <body>
+        Enter your number:<input id="number">
+
+        <button onclick = "mul()"> check </button>
+        </body>
+        </html>
